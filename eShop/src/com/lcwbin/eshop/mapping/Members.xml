@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lcwbin.eshop.dao.MembersDao">
+	
+	<resultMap type="com.lcwbin.eshop.module.Members" id="membersResultMap">
+		<id property="mid" column="mid"/>
+		<result property="mobile" column="mobile"/>
+		<result property="email" column="email"/>
+		<result property="username" column="username"/>
+		<result property="password" column="password"/>
+		<result property="image" column="image"/>
+		<result property="integral" column="integral" jdbcType="INTEGER" javaType="java.lang.Integer"/>
+		<result property="creationdate" column="creationdate" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+		<result property="logindate" column="logindate" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+		<result property="logoutdate" column="logoutdate" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+		<result property="updatedate" column="updatedate" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+	</resultMap>
+	
+	<!-- 会员注册 -->
+	<insert id="registerMember" parameterType="com.lcwbin.eshop.module.Members">
+		insert into members (
+			mid,mobile,email,username,password,image,integral,creationdate,logindate,logoutdate,updatedate
+		)values(
+			#{mid},#{mobile},#{email},#{username},#{password},#{image},#{integral},#{creationdate},
+			#{logindate},#{logoutdate},#{updatedate}
+		)
+	</insert>
+	
+	<!-- 会员登录 -->
+    <select id="memberLogin"  parameterType="com.lcwbin.eshop.module.Members" resultMap="membersResultMap">  
+        select * from members   
+        where   
+            (email=#{email} or mobile=#{mobile}) and password=#{password}
+    </select>  
+	
+</mapper> 
+ 
