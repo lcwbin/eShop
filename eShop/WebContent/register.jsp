@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>欢迎登录</title>
+<title>会员注册</title>
 <link href="${pageContext.request.contextPath }/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--theme-style-->
 <link href="${pageContext.request.contextPath }/css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -22,35 +22,59 @@
 				<div class="logo">
 					<a href="index.html"><img src="${pageContext.request.contextPath }/resources/images/shop-logo.png" alt=" " /></a>
 				</div>
+				
+				
+				<div class="header-bottom-right">					
+					<div class="account"><a href="login.html"><span> </span>个人中心</a></div>
+						<ul class="login">
+							<li><a href="login.html"><span> </span>登录</a></li> |
+							<li ><a href="register.html">注册</a></li>
+						</ul>
+					<div class="cart"><a href="#"><span> </span>购物车</a></div>
+				</div>
 			</div>
 		</div>
 		
 	</div>
 	<!---->
-	<div class="container">
+	<div class="container">		
 		
-      	   <div class="account_grid">
-			   <div class=" login-right">
-			  	<h3>用户登录</h3>
-				<form action="${pageContext.request.contextPath }/memberLogin.action" method="post">
-				  <div>
-					<span>邮箱<label>*</label></span>
-					<input type="text" name="email"> 
-				  </div>
-				  <div>
-					<span>密码<label>*</label></span>
-					<input type="password" name="password"> 
-				  </div>
-				  <a class="forgot" href="#">忘记密码?</a>
-				  <input type="submit" value="登录">
-			    </form>
-			   </div>	
-			    <div class=" login-left">
-			  	 <h3>新用户注册</h3>
-				 <a class="acount-btn" href="register.html">注册新用户</a>
-			   </div>
-			 </div>
-			
+		<div class="register">
+		  	  <form> 
+				 <div class="  register-top-grid">
+					<h3>会员注册</h3>
+					<div class="mation">
+						<span>用户名</span>
+						<input type="text"> 
+					
+						<span>密码</span>
+						<input type="text"> 
+					 
+						<span>确认密码</span>
+						<input type="text"> 
+					</div>
+					 <div class="clearfix"> </div>
+					   <a class="news-letter" href="#">
+						 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up</label>
+					   </a>
+				 </div>
+				     <div class="  register-bottom-grid">
+							<div class="mation">
+								<span>手机</span>
+								<input type="text">
+								<span>短信验证码</span>
+								<input type="text">
+							</div>
+					 </div>
+				</form>
+				<div class="register-but">
+				   <form>
+					   <input type="submit" value="提交">
+					   <div class="clearfix"> </div>
+				   </form>
+				</div>
+		  </div>
+		   
 	</div>
 	<div class="footer">
 		<div class="footer-top">

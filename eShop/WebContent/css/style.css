@@ -17,7 +17,7 @@ body a{
 }
 .top-header{
 	background: #F97E76;
-	padding: 0.7em 0;
+	/* padding: 0.7em 0; */
 }
 .top-header-left{
 	float: left;
@@ -861,10 +861,10 @@ p.m_text {
 	display: block;
 	text-transform: uppercase;
 }
-.login-right input[type="text"] {
+.login-right input[type="text"],input[type="password"],input[type="email"] {
 	border: 1px solid #DDDBDB;
 	outline-color:#fb4d01;
-	width: 96%;
+	width: 85%;
 	font-size:0.9em;
 	padding:10px;
 }
@@ -903,7 +903,7 @@ a.forgot {
 	display: block;
 	text-transform: uppercase;
 }
-.register-top-grid input[type="text"], .register-bottom-grid input[type="text"] {
+.register-top-grid input[type="text"],input[type="password"],input[type="email"], .register-bottom-grid input[type="text"],input[type="password"],input[type="email"] {
 	border: 1px solid #EEE;
 	outline-color:#FF5B36;
 	width: 85%;
