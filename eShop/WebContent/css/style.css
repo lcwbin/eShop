@@ -31,7 +31,7 @@ ul.support li{
 	display: inline-block;
 }
 ul.support li  label{
-	background: url(../images/img-sprite.png)-2px -27px;
+	background: url(../resources/images/img-sprite.png)-2px -27px;
 	width: 32px;
 	height: 30px;
 	display:inline-block;
@@ -84,7 +84,7 @@ ul.support li a {
 	width:24%;
 }
 .account a span{
-	background: url(../images/img-sprite.png)-117px -30px;
+	background: url(../resources/images/img-sprite.png)-117px -30px;
 	width: 26px;
 	height: 26px;
 	display: inline-block;
@@ -96,7 +96,7 @@ ul.support li a {
 	color: #000;
 }
 .cart a span{
-	background: url(../images/img-sprite.png) -172px -28px;
+	background: url(../resources/images/img-sprite.png) -172px -28px;
 	width: 26px;
 	height: 26px;
 	display: inline-block;
@@ -111,7 +111,7 @@ ul.login li{
 	display:inline-block;
 }
 ul.login li a span{
-	background: url(../images/img-sprite.png) -143px -29px;
+	background: url(../resources/images/img-sprite.png) -143px -29px;
 	width: 26px;
 	height: 26px;
 	display: inline-block;
@@ -464,7 +464,7 @@ h5.latest-product{
 	padding: 3em 0;
 }
 .chain-grid span.star{
-	background: url(../images/img-sprite.png)-208px -14px;
+	background: url(../resources/images/img-sprite.png)-208px -14px;
 	width: 52px;
 	height: 52px;
 	display: block;
@@ -616,11 +616,11 @@ p.m_text {
 }
 .nbs-flexisel-nav-left {
 	left: 0px;
-	background: url(../images/img-sprite.png) no-repeat -446px -21px;
+	background: url(../resources/images/img-sprite.png) no-repeat -446px -21px;
 }
 .nbs-flexisel-nav-right {
 	right: 0px;
-	background: url(../images/img-sprite.png) no-repeat -477px -21px;
+	background: url(../resources/images/img-sprite.png) no-repeat -477px -21px;
 }
 
 .etalage_zoom_area div {
@@ -897,8 +897,8 @@ a.forgot {
 	font-weight:600;
 }
 .register-top-grid span, .register-bottom-grid span {
-	color:#555;
-	font-size: 0.9em;
+	/* color:#555; */
+	/* font-size: 0.9em; */
 	padding-bottom: 0.2em;
 	display: block;
 	text-transform: uppercase;
@@ -951,7 +951,7 @@ a.forgot {
 }
 .checkbox input + i:after {
 	content: '';
-	background: url("../images/tick1.png") no-repeat 1px 2px;
+	background: url("../resources/images/tick1.png") no-repeat 1px 2px;
 	top: -1px;
 	left: -1px;
 	width: 15px;
@@ -981,7 +981,7 @@ a.forgot {
 .register-but{
 	margin-top:1em;
 }
-.register-but form input[type="submit"] {
+.register-but input[type="submit"] {
 	background:#F97E76;
 	color: #FFF;
 	font-size:1em;
@@ -1039,7 +1039,7 @@ ul.face-in-to li {
 	float:left;
 }
 ul.face-in-to li a span{
-	background: url(../images/img-sprite.png) -281px 0px;
+	background: url(../resources/images/img-sprite.png) -281px 0px;
 	width: 69px;
 	height: 71px;
 	display: block;
